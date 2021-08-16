@@ -1,0 +1,38 @@
+body {
+    background: #181818;
+    color: #b0b0b0;
+}
+
+.browse-shadow-remover {
+    background: #181818;
+}
+
+a, .pseudoLink {
+    color: white;
+}
+
+a:hover, .pseudoLink:hover {
+    color: #dddddd;
+}
+
+.header-bottom-bar {
+    background: linear-gradient(to bottom, #343434 1%, #202020 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #343434), color-stop(100%, #202020));
+    background: -webkit-linear-gradient(top, #343434 1%, #202020 100%);
+    background: -o-linear-gradient(top, #343434 1%, #202020 100%);
+}
+
+input[type="text"], input[type="search"], input[type="password"], input[type="email"] {
+    background: #121212;
+    border: 1px solid #131313;
+    color: white;
+}
+
+input[type="text"]:hover, input[type="search"]:hover, input[type="password"]:hover, input[type="email"]:hover {
+    border: 1px solid #3b3b3b;
+}
+
+
+input[type="text"]:focus, input[type="search"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border: 1px solid #262626;
+}
