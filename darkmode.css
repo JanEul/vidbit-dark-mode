@@ -36,3 +36,41 @@ input[type="text"]:hover, input[type="search"]:hover, input[type="password"]:hov
 input[type="text"]:focus, input[type="search"]:focus, input[type="password"]:focus, input[type="email"]:focus {
     border: 1px solid #262626;
 }
+
+.header-middle-nav a {
+    background: linear-gradient(to bottom, #2f2f2f 0, #171717 100%);
+    color: white;
+    border-color: transparent;
+}
+
+.header-middle-nav a:hover {
+    color: black !important
+}
+
+footer {
+    background: #191919;
+    border: 1px solid #404040;
+}
+
+footer > div:first-of-type {
+    border-bottom: 1px solid #404040;
+}
+
+footer > div:last-of-type > div {
+    border-right-color: #404040;
+}
+
+.yellowBox {
+    background: #1b1b0a;
+    border: 1px solid #232323;
+}
+
+.home-side-box {
+    background: #0a1425;
+    border: 1px solid #182548;
+}
+
+.homepagePlayer-info {
+    background: linear-gradient(to bottom,#333333 3%,#000 100%);
+    border-color: #333;
+}
