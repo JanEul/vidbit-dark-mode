@@ -1,76 +1,371 @@
+.browse-shadow-remover,body {
+    background: #181818
+}
+
 body {
-    background: #181818;
     color: #b0b0b0;
 }
 
-.browse-shadow-remover {
-    background: #181818;
+.pseudoLink,a {
+    color: #6db8ff !important;
 }
 
-a, .pseudoLink {
-    color: white;
+.pseudoLink:hover,a:hover {
+    color: #6db8ff !important;
 }
 
-a:hover, .pseudoLink:hover {
-    color: #dddddd;
+#activity-edit, #subscriptions-edit {
+    /* jake: Why does this exist in main.css? */
+    color: #6db8ff !important;
+}
+
+.header-left-logo>img, .header-logo img {
+    /* 
+    
+    jake: vidbit doesn't have a darkmode version of it's logo
+    and for security reasons does not allow custom images in css
+    so i am inverting it for now so it doesn't look super fucked in darkmode.
+    
+    Jan please fix.
+    
+    */
+    
+    filter: invert(1) !important;
+}
+
+.header-left-logo:hover>img {
+    filter: invert(1) !important;
 }
 
 .header-bottom-bar {
-    background: linear-gradient(to bottom, #343434 1%, #202020 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #343434), color-stop(100%, #202020));
-    background: -webkit-linear-gradient(top, #343434 1%, #202020 100%);
-    background: -o-linear-gradient(top, #343434 1%, #202020 100%);
+    border-color: #646464;
+    background: linear-gradient(to bottom,#343434 1%,#202020 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#343434),color-stop(100%,#202020));
+    background: -webkit-linear-gradient(top,#343434 1%,#202020 100%);
+    background: -o-linear-gradient(top,#343434 1%,#202020 100%)
 }
 
-input[type="text"], input[type="search"], input[type="password"], input[type="email"] {
-    background: #121212;
-    border: 1px solid #131313;
-    color: white;
+.header-bottom-bar-nav>a{
+    border-left-width: 0px !important;
+    border-right-color: #646464;
+    border-left-color: #646464;
+
+    color: #6db8ff !important;
 }
 
-input[type="text"]:hover, input[type="search"]:hover, input[type="password"]:hover, input[type="email"]:hover {
-    border: 1px solid #3b3b3b;
+.header-bottom-bar-nav>a:hover {
+    background: linear-gradient(to bottom,#51575b 1%,#1c1e1f 100%) !important;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#51575b),color-stop(100%,#1c1e1f)) !important;
+    background: -webkit-linear-gradient(top,#51575b 1%,#1c1e1f 100%) !important;
+    background: -o-linear-gradient(top,#51575b 1%,#1c1e1f 100%) !important;
 }
 
-
-input[type="text"]:focus, input[type="search"]:focus, input[type="password"]:focus, input[type="email"]:focus {
-    border: 1px solid #262626;
+body[data-page=channel2009] header {
+    background: linear-gradient(to bottom,#343434 1%,#202020 100%) !important;
 }
 
 .header-middle-nav a {
-    background: linear-gradient(to bottom, #2f2f2f 0, #171717 100%);
-    color: white;
-    border-color: transparent;
+    background: linear-gradient(to bottom,#2f2f2f 0,#171717 100%);
+    text-shadow: unset;
+    border-color: #424242
+}
+
+
+.header-middle-nav a:active, .header-middle-nav a.sel {
+    border-color: #727272 !important;
+    
+}
+
+.header-middle-nav a::after {
+    background: linear-gradient(to bottom,#393939 0,#212121 100%);
+    border-color: #636363
+
 }
 
 .header-middle-nav a:hover {
-    color: black !important
+    border-color: #484848 !important;
+}
+
+.header-middle-nav a::before, .header-middle-nav a.sel::before {
+    background: linear-gradient(#4d4d4d 1%,#343434 100%) !important;
+}
+
+.header-right-top-search {
+    background: linear-gradient(to bottom,#393939 0,#212121 100%);
+    border-color: #4b4949 !important;
+}
+
+.header a, header .pseudoLink {
+    color: #6db8ff !important;
+}
+
+.header-bar {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#434343),to(#202223)) !important;
+}
+
+#header-browse-list>a:hover, #header-upload-list>a:hover {
+    color: black !important;
+}
+
+input[type=email],input[type=password],input[type=search],input[type=text] {
+    background: #121212 !important;
+    border: 1px solid #7f7f7f !important;
+    color: #fff !important;
+}
+
+input[type=email]:hover,input[type=password]:hover,input[type=search]:hover,input[type=text]:hover {
+    border: 1px solid #b3b3b3 !important;
+}
+
+input[type=email]:focus,input[type=password]:focus,input[type=search]:focus,input[type=text]:focus {
+    border: 1px solid #b3b3b3 !important;
+}
+
+
+.upload-btn-wrapper>a:hover{
+    color: #994800 !important;
+}
+
+.yellowBox {
+    /* jake: I still don't think this looks very right but oh well, someone can fix this later */
+    background: #2d2d00;
+    border: 1px solid #878402;
+}
+
+.yellowBox>div:last-of-type a {
+    color: #6db8ff !important;
+}
+
+.yellowBox h3 {
+    color: #fe7f01 !important;
+}
+
+.yellowBox>div>div:last-of-type a {
+    color: #fe7f01 !important;
+}
+
+.trendingVideos>div:first-of-type .sel {
+    color: white !important;
+}
+
+.trendingVideos>div {
+    border-top-color: #646464 !important;
+    border-bottom-color: #646464 !important;
+}
+
+.home-side-box {
+    background: #0e1c37;
+    border: 1px solid #3d63c8
+}
+
+.home-side-box>h3 {
+    color: #4e87ff !important;
+}
+
+.homepagePlayer-info {
+    background: linear-gradient(to bottom,#333 3%,#000 100%);
+    border-color: #333
+}
+
+.squareBox, #modal {
+    background-color: #181818 !important;
+}
+
+.squareBox>div, #modal>div{
+    /* jake: this does not look very good */
+    background-color: #222222 !important;
+    border-color: #575757 !important;
+}
+
+.videosBox .video-info>div {
+    color: #bfbebe !important;
+}
+
+.video-contest>div strong:first-of-type {
+    color: #d7d7d7 !important;
+}
+
+.video-contest>div:first-of-type>div>div {
+    color: #d6d6d6 !important;
+}
+
+.videoThumbnail, .playlistThumbnail {
+    background-color: #181818 !important;
+    border-color: #686868 !important;
+}
+
+.videosBeingWatched .video {
+    border-color: #646464;
+    background-color: #181818;
+}
+
+.videosBeingWatched .video .video-time {
+    background: linear-gradient(to right,
+                                rgba(40, 40, 40, 0) 0%,
+                                rgba(40, 40, 40, 0) 1%,
+                                rgba(40, 40, 40, 1) 94%,
+                                rgba(40, 40, 40, 1) 100%
+                               ) !important;
+    color: white !important;
 }
 
 footer {
     background: #191919;
-    border: 1px solid #404040;
+    border: 1px solid #646464
 }
 
-footer > div:first-of-type {
-    border-bottom: 1px solid #404040;
+footer>div:first-of-type {
+    border-bottom: 1px solid #646464
 }
 
-footer > div:last-of-type > div {
-    border-right-color: #404040;
+footer>div:last-of-type>div {
+    border-right-color: #646464
 }
 
-.yellowBox {
-    background: #1b1b0a;
-    border: 1px solid #232323;
+.footer-button {
+    background: linear-gradient(to bottom,
+                                #343434 37%,
+                                #343434 37%,
+                                #222222 100%
+                               ) !important;
+    border-color: #818181 !important
 }
 
-.home-side-box {
-    background: #0a1425;
-    border: 1px solid #182548;
+.footer-button:active, .footer-button.sel {
+    background: linear-gradient(to bottom,
+                                #222222 37%,
+                                #222222 37%,
+                                #343434 100%
+                               ) !important;
 }
 
-.homepagePlayer-info {
-    background: linear-gradient(to bottom,#333333 3%,#000 100%);
-    border-color: #333;
+footer strong {
+    color: #b3b3b3 !important;
+}
+
+.verticalVideos .video-info span {
+    color: #bfbebe !important
+}
+
+#header-dropdown>.squareBox {
+    border-color: #6e6e6e !important;
+}
+
+.header-dropdown-in>div:first-of-type {
+    background: #272727 !important;
+    color: white !important;
+}
+
+.mainChannel {
+    /* jake: should this not be apart of the header dropdown class ???? */
+
+    background: #272727 !important;
+    color: white !important;
+    
+}
+
+.channelManage-link, .header-dropdown-links > a {
+    color: #6db8ff !important;
+    background-color: #272727 !important;
+}
+
+.channelManage-link:hover, .header-dropdown-links > a:hover {
+    background-color: #3d3d3d !important;
+}
+
+.header-dropdown-links {
+    border: unset;
+}
+
+
+.header-dropdown-links>a:nth-of-type(1n) {    
+    border-bottom: 1px solid rgb(100 100 100) !important;
+
+}
+
+.header-dropdown-links>a:nth-of-type(2n) {
+    /* jake: I will hunt you down Jan for this. */
+    
+    border-bottom: 1px solid rgb(100 100 100) !important;
+    border-left: 1px solid rgb(100 100 100) !important;
+
+}
+
+#notificationInbox>div {
+    border-color: #888888 !important;
+}
+
+#notificationInbox>div:before {
+    background-color: #222222 !important;
+}
+
+.notification-header {
+    background-color: #222222 !important;
+    color: white !important;
+    border-color: #626262 !important
+}
+
+.notification-header>div:last-of-type {
+    border-color: #626262 !important
+}
+
+.notification-items>div:nth-of-type(odd) {
+    background-color: #272727 !important;
+}
+
+.fa-eye {
+    color: white !important;
+}
+
+.videoDescription {
+    background-color: #222222 !important;
+    border-color: #626262 !important
+}
+
+.subscribeButton>a {
+    background:rgb(24, 26, 27) !important;
+}
+
+.video-shares, .video-community, .video-stats {
+    border-color: #626262 !important
+}
+
+.bigLinks>span.sel {
+    background-color: #181818 !important;
+    color: #fcfcfc !important;
+    border-bottom: none;
+}
+
+.bigLinks>span.sel:hover {
+    background: #ffe044 !important;
+}
+
+.bigLinks>span {
+    background: linear-gradient(to bottom,#2e2e2e 0,#0f0f0f 100%);
+    color: #bcbcbc !important;
+    border-color: #626262 !important;
+}
+
+.bigLinks>span:hover {
+    background: linear-gradient(to bottom,#525252 0,#333333 100%);
+    color: #fcfcfc !important;
+}
+
+.share-links>span {
+    color: #6db8ff !important;
+}
+
+.commentBox {
+    color: white !important;
+    background-color: #121212 !important;
+    border-color: #626262 !important
+}
+
+.arrowSection>div:first-of-type {
+    color: #949494 !important;
+}
+
+
+.arrowSection>div:first-of-type:hover, .arrowSection>div:first-of-type:hover i {
+    color: #f0f0f0 !important;
 }
